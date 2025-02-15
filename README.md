@@ -138,7 +138,7 @@ Clone the repository and catkin_make:
 
 ```
     cd ~/$A_ROS_DIR$/src
-    git clone https://github.com/hku-mars/FAST_LIO.git
+    git clone https://github.com/dlduddn/FAST_LIO_Cov23.git
     cd FAST_LIO
     git submodule update --init
     cd ../..
