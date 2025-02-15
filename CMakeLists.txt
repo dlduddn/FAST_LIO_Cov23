@@ -43,6 +43,7 @@ find_package(PythonLibs REQUIRED)
 find_path(MATPLOTLIB_CPP_INCLUDE_DIRS "matplotlibcpp.h")
 
 find_package(catkin REQUIRED COMPONENTS
+  std_msgs
   geometry_msgs
   nav_msgs
   sensor_msgs
@@ -71,11 +72,13 @@ include_directories(
 add_message_files(
   FILES
   Pose6D.msg
+  CustomOdometry.msg
 )
 
 generate_messages(
  DEPENDENCIES
  geometry_msgs
+ std_msgs
 )
 
 catkin_package(

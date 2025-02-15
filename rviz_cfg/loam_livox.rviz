@@ -177,40 +177,7 @@ Visualization Manager:
             Value: true
           Enabled: true
           Keep: 1
-          Name: Odometry
-          Position Tolerance: 0.0010000000474974513
-          Shape:
-            Alpha: 1
-            Axes Length: 1
-            Axes Radius: 0.20000000298023224
-            Color: 255; 85; 0
-            Head Length: 0
-            Head Radius: 0
-            Shaft Length: 0.05000000074505806
-            Shaft Radius: 0.05000000074505806
-            Value: Axes
-          Topic: /Odometry
-          Unreliable: false
-          Value: true
       Enabled: true
-      Name: Odometry
-    - Class: rviz/Axes
-      Enabled: true
-      Length: 0.699999988079071
-      Name: Axes
-      Radius: 0.10000000149011612
-      Reference Frame: <Fixed Frame>
-      Value: true
-    - Alpha: 0
-      Buffer Length: 2
-      Class: rviz/Path
-      Color: 25; 255; 255
-      Enabled: true
-      Head Diameter: 0
-      Head Length: 0
-      Length: 0.30000001192092896
-      Line Style: Billboards
-      Line Width: 0.20000000298023224
       Name: Path
       Offset:
         X: 0
