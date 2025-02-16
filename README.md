@@ -139,7 +139,7 @@ Clone the repository and catkin_make:
 ```
     cd ~/$A_ROS_DIR$/src
     git clone https://github.com/dlduddn/FAST_LIO_Cov23.git
-    cd FAST_LIO
+    cd FAST_LIO_Cov23
     git submodule update --init
     cd ../..
     catkin_make
