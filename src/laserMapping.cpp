@@ -59,7 +59,7 @@
 #include <livox_ros_driver/CustomMsg.h>
 #include "preprocess.h"
 #include <ikd-Tree/ikd_Tree.h>
-#include <fast_lio/CustomOdometry.h>
+#include <fast_lio_cov23/CustomOdometry.h>
 
 #define INIT_TIME           (0.1)
 #define LASER_POINT_COV     (0.001)
@@ -590,7 +590,7 @@ void set_posestamp(T & out)
 void publish_odometry(const ros::Publisher &pubOdomAftMapped)
 {   
     // Covariance23 메시지 생성
-    fast_lio::CustomOdometry odomAftMapped;
+    fast_lio_cov23::CustomOdometry odomAftMapped;
 
     // Odometry 메시지 설정
     odomAftMapped.header.frame_id = "camera_init";
@@ -859,7 +859,7 @@ int main(int argc, char** argv)
             ("/cloud_effected", 100000);
     ros::Publisher pubLaserCloudMap = nh.advertise<sensor_msgs::PointCloud2>
             ("/Laser_map", 100000);
-    ros::Publisher pubOdomAftMapped = nh.advertise<fast_lio::CustomOdometry> 
+    ros::Publisher pubOdomAftMapped = nh.advertise<fast_lio_cov23::CustomOdometry> 
             ("/Odometry", 100000);
     ros::Publisher pubPath          = nh.advertise<nav_msgs::Path> 
             ("/path", 100000);

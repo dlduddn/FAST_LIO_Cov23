@@ -71,7 +71,7 @@ ax1.YAxis.FontSize = 12;
 ax1.XAxis.FontSize = 12;
 grid on
 box on
-% print('./Figures/fastlio_exp_average','-depsc','-r600')
+% print('./Figures/fastlio_cov23_exp_average','-depsc','-r600')
 
 
 index_ikd = find(search_time_ikd > 0);
@@ -130,6 +130,6 @@ ylim([0,0.85]);
 ax3 = gca;
 ax3.YAxis.FontSize = 12;
 ax3.XAxis.FontSize = 12;
-% print('./Figures/fastlio_exp_combine','-depsc','-r1200')
-% exportgraphics(f,'./Figures/fastlio_exp_combine_1.pdf','ContentType','vector')
+% print('./Figures/fastlio_cov23_exp_combine','-depsc','-r1200')
+% exportgraphics(f,'./Figures/fastlio_cov23_exp_combine_1.pdf','ContentType','vector')
 

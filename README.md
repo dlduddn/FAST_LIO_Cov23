@@ -28,14 +28,14 @@
 <!-- [![Watch the video](doc/real_exp_2.png)](https://youtu.be/2OvjGnxszf8) -->
 <div align="left">
 <img src="doc/real_experiment2.gif" width=49.6% />
-<img src="doc/ulhkwh_fastlio.gif" width = 49.6% >
+<img src="doc/ulhkwh_fastlio_cov23.gif" width = 49.6% >
 </div>
 
 **Related video:**  [FAST-LIO2](https://youtu.be/2OvjGnxszf8),  [FAST-LIO1](https://youtu.be/iYCY6T79oNU)
 
 **Pipeline:**
 <div align="center">
-<img src="doc/overview_fastlio2.svg" width=99% />
+<img src="doc/overview_fastlio_cov232.svg" width=99% />
 </div>
 
 **New Features:**
@@ -82,7 +82,7 @@ Follow [livox_ros_driver Installation](https://github.com/Livox-SDK/livox_ros_dr
 
 
 ## 2. Build
-If you want to use docker conatiner to run fastlio2, please install the docker on you machine.
+If you want to use docker conatiner to run fastlio_cov232, please install the docker on you machine.
 Follow [Docker Installation](https://docs.docker.com/engine/install/ubuntu/).
 ### 2.1 Docker Container
 User can create a new script with anyname by the following command in linux:
@@ -99,7 +99,7 @@ mkdir docker_ws
 xhost +local:
 
 # Container name
-CONTAINER_NAME="fastlio2"
+CONTAINER_NAME="fastlio_cov232"
 
 # Run the Docker container
 docker run -itd \
@@ -116,7 +116,7 @@ docker run -itd \
   --group-add video \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
   --env="DISPLAY=$DISPLAY" \
-  kenny0407/marslab_fastlio2:latest \
+  kenny0407/marslab_fastlio_cov232:latest \
   /bin/bash
 ```
 execute the following command to grant execute permissions to the script, making it runnable:
@@ -252,7 +252,7 @@ rosbag play YOUR_DOWNLOADED.bag
 
 **NCLT Dataset**: Original bin file can be found [here](http://robots.engin.umich.edu/nclt/).
 
-We produce [Rosbag Files](https://drive.google.com/drive/folders/1blQJuAB4S80NwZmpM6oALyHWvBljPSOE?usp=sharing) and [a python script](https://drive.google.com/file/d/1QC9IRBv2_-cgo_AEvL62E1ml1IL9ht6J/view?usp=sharing) to generate Rosbag files: ```python3 sensordata_to_rosbag_fastlio.py bin_file_dir bag_name.bag```
+We produce [Rosbag Files](https://drive.google.com/drive/folders/1blQJuAB4S80NwZmpM6oALyHWvBljPSOE?usp=sharing) and [a python script](https://drive.google.com/file/d/1QC9IRBv2_-cgo_AEvL62E1ml1IL9ht6J/view?usp=sharing) to generate Rosbag files: ```python3 sensordata_to_rosbag_fastlio_cov23.py bin_file_dir bag_name.bag```
     
 Run:
 ```
